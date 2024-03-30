@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="contato.css">
+
+    <script src="contato.js"></script>
+
+    <title>Contato</title>
+</head>
+<body>
+    <div class="body">
+
+        <div class="formulario">
+            <form action="https://api.staticforms.xyz/submit" method="post" class="form">
+
+                <input type="hidden" name="accessKey" value="9ae674fc-0294-40c2-a746-ea8886d89841">
+                <input type="hidden" name="redirectTo" value="BOLVIER/bolvier.html">
+                
+                <h1>CONTATO</h1>
+
+                <div class="lado-direito">
+                    <label for="username">Nome de Usuário</label>
+                    <input type="text" name="name" id="username" required minlength="3" maxlefength="25">
+
+                    <label for="usermail">Seu Email</label>
+                    <input type="email" name="email" id="usermail" required maxlength="50">
+
+                </div>
+                <div class="grid">
+                    <label for="textareamensage">Escreva algo</label>
+                    <textarea name="message" id="textareamensage" cols="10" rows="2" required maxlength="100"></textarea>
+                </div>
+                <div class="btn">
+                    <input type="submit" name="submit" id="enviar">
+                    
+                </div>
+                
+
+            </form>
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,454 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+    font-family: "Sora", sans-serif;
+    transition: .3s;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(63,94,251);
+    border-radius: 10px;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+}
+button{
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    border-radius: 100px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+button:hover{
+    background-color: #0a2351;
+    color: #fff;
+    border: none;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0px;
+}
+.nav h1{
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(0,35,139,1) 91%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.nav ul, li{
+    list-style: none;
+    display: flex;
+    padding: 5px 0px;
+    margin: 0px 15px;
+    font-size: 20px;
+}
+.nav ul li a:hover{
+    scale: 1.05;
+    transition: .1s;
+    
+}
+.btn-up{
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    padding: 10px;
+    border-radius: 100px;
+}
+.btn-up a button{
+    width: 50px;
+    height: 50px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.btn-up a button:hover{
+    background-color: whitesmoke;
+}
+.btn-up a button img{
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+}
+.btn-down{
+    display: flex;
+    justify-content: center;
+}
+.btn-down a img{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border: none;
+}
+header{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 150px 500px;
+}
+.grid-l img{
+    width: 320px;
+    height: auto;
+    border-radius: 100%;
+    border: none;
+}
+.grid-l img:hover{
+    scale: 1.05;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.grid-r{
+    padding: 55px 0px;
+    font-size: 25px;
+}
+.grid-r h1{
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(0,35,139,1) 91%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.grid-r h5{
+    color: gray;
+}
+.s-mim{
+    display: grid;
+    justify-content: space-around;
+}
+.s-mim h1{
+    padding: 250px 0px 100px 0px;
+    text-align: center;
+}
+.s-l{
+    display: flex;
+}
+.s-l img{
+    border-radius: 10px;
+    width: 350px;
+    height: auto;
+}
+.s-r{
+    display: flex;
+}
+.main{
+    display: flex;
+}
+.card{
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px 0px;
+    width: 400px;
+    height: 180px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.card:hover{
+    scale: 1.04;
+    transition: .2;
+}
+.card h4{
+    padding: 10px 0px;
+}
+.card p{
+    padding: 0px 10px;
+    text-align: left;
+    font-size: 15px;
+}
+.card ul li{
+    font-size: 13px;
+}
+.projetos{
+    display: GRID;
+    justify-content: center;
+    text-align: center;
+}
+.projetos h1{
+    padding: 250px 200px 0px 250px;
+}
+.main-p{
+    display: flex;
+}
+.p-card{
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px 0px;
+    width: 400px;
+    height: 480px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.p-card img{
+    width: 280px;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0px;
+}
+.p-card h2{
+    padding: 10px 0px 30px 0px;
+}
+.p-card a{
+    padding: 10px 0px 50px 0px;
+}.p-card a button{
+    box-shadow: none;
+    border: 1px solid black;
+}
+.contato{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 300px 200px 100px 250px;
+}
+.contato h1{
+    padding: 20px 0px;
+}
+.main-c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 50px;
+    width: 700px;
+    height: 60px;
+}
+.card-c{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    margin: 5px;
+    padding: 0px 5px;
+}
+.card-c a{
+    text-decoration: underline;
+    color: blue;
+    text-align: center;
+}
+
+@media screen and (max-width: 414px) {
+    a{
+        text-decoration: none;
+        color: black;
+        background-color: transparent;
+    }
+    button{
+        width: 100px;
+        height: 40px;
+        cursor: pointer;
+        border: none;
+        border-radius: 100px;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+    button:hover{
+        background-color: #0a2351;
+        color: #fff;
+        border: none;
+    }
+    .nav{
+        display: flex;
+        justify-content: center;
+    }
+    .nav h1{
+        background: rgb(63,94,251);
+        background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(0,35,139,1) 91%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .nav ul, li{
+        list-style: none;
+        display: none;
+    }
+    .btn-up{
+        bottom: 0;
+        right: 0;
+        position: fixed;
+        padding: 10px;
+    }
+    .btn-up a button{
+        width: 50px;
+        height: 50px;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+    .btn-up a button:hover{
+        background-color: whitesmoke;
+    }
+    .btn-up a button img{
+        width: 20px;
+        height: 20px;
+        background-color: transparent;
+    }
+    .btn-down{
+        display: flex;
+        justify-content: center;
+    }
+    .btn-down a img{
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        border: none;
+    }
+    header{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 50px 0px;
+    }
+    .grid-l img{
+        width: 120px;
+        height: auto;
+        border-radius: 100%;
+        border: none;
+    }
+    .grid-l img:hover{
+        scale: 1.05;
+        border: none;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+    .grid-r{
+        padding: 0px 0px;
+        font-size: 15px;
+    }
+    .grid-r h1{
+        background: rgb(63,94,251);
+        background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(0,35,139,1) 91%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .grid-r h5{
+        color: gray;
+    }
+    .s-mim{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .s-mim h1{
+        padding: 200px 0px 50px 0px;
+        text-align: center;
+        align-items: center;
+    }
+    .s-l{
+        display: grid;
+    }
+    .s-l img{
+        border-radius: 10px;
+        width: 350px;
+        height: auto;
+    }
+    .s-r{
+        display: grid;
+    }
+    .main{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .card{
+        border: none;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 10px 0px;
+        width: 350px;
+        height: 180px;
+        text-align: center;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+    .card:hover{
+        scale: none;
+    }
+    .card h4{
+        padding: 10px 0px;
+    }
+    .card p{
+        padding: 0px 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+    .card4 p ul li{
+        font-size: 15px;
+    }
+    .projetos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .projetos h1{
+        padding: 180px 0px 80px 0px;
+        text-align: center;
+    }
+    .main-p{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .p-card{
+        border: none;
+        border-radius: 10px;
+        width: 150px;
+        height: 280px;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+    .p-card img{
+        width: 100px;
+        height: auto;
+        border-radius: 10px;
+    }
+    .p-card h2{
+        padding: 10px 0px 30px 0px;
+        font-size: 10px;
+    }
+    .p-card a{
+        padding: 10px 0px 50px 0px;
+        font-size: 8px;
+    }.p-card a button{
+        box-shadow: none;
+        border: 1px solid black;
+        width: 50px;
+        height: 30px;
+        border-radius: 10px;
+        font-size: 10px;
+    }
+    .contato{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 200px 0px 10px 0px;
+    }
+    .contato h1{
+        padding: 20px 0px 20px 0px;
+        text-align: center;
+        align-items: center;
+    }
+    .main-c{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-radius: 50px;
+        width: 350px;
+        height: 60px;
+        margin: 5px;
+    }
+    .card-c{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        padding: 0px 0px;
+        margin: 25px;
+    }
+    #email, #zap{
+        display: none;
+    }
+    .card-c img{
+        width: 40px;
+    }
+}
